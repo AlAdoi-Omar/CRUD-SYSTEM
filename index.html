@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUDS SYSTEM</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid my-5">
+      <h1 class="text-center py-2">"CRUD SYSTEM"</h1>
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="form-group">
+            <label for="productName">Enter productName:</label>
+            <input class="form-control my-2" type="text" id="productName" />
+            <div class="alert alert-danger d-none" id="nameAlert">
+              name should start with a capital letter and contain 3 to 7 letters
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="productPrice">Enter productPrice:</label>
+            <input class="form-control my-2" type="number" id="productPrice" />
+            <div class="alert alert-danger d-none" id="priceAlert">
+              price should be between 10,000 and 100,000
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="productCategory">Enter productCategory:</label>
+            <input class="form-control my-2" type="text" id="productCategory" />
+            <div class="alert alert-danger d-none" id="categoryAlert">
+              category should be (Mobile, Tab, or Desktop)
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="productDescription">Enter Description product:</label>
+            <textarea
+              class="form-control my-2"
+              type="text"
+              id="productDescription"
+            ></textarea>
+            <div class="alert alert-danger d-none" id="descriptionAlert">
+              description should be 30 letters
+            </div>
+          </div>
+          <button disabled class="btn btn-primary" id="addBtn">
+            Add Product
+          </button>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-6 mx-auto">
+          <label for="">Search nameProduct:</label>
+          <input class="form-control my-2" type="text" id="searchProduct" />
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-12">
+          <table class="table text-center table-striped">
+            <thead class="table-info">
+              <th>No.</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Category</th>
+              <th>Description</th>
+              <th></th>
+              <th></th>
+            </thead>
+            <tbody id="tbodyContent"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

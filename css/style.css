@@ -1,0 +1,10 @@
+body {
+  background-image: url("https://media.istockphoto.com/id/1472865739/photo/blue-light-ceramic-wall-chequered-and-floor-tiles-mosaic-background-in-bathroom-kitchen.jpg?s=612x612&w=0&k=20&c=eSFt4OXyFv1xgDSfiPwnEs3DQAg6LBQ89YEJUQdwvPI=");
+  background-position: center center;
+  background-size: cover;
+  font-family: "Arial", sans-serif; /* Example font change */
+}
+
+textarea {
+  resize: none;
+}
